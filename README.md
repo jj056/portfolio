@@ -1,4 +1,4 @@
-# My Portfolio
+# Jerry's portfolio
 
 Welcome to my portfolio! Here are some of my projects:
 
@@ -7,7 +7,9 @@ Welcome to my portfolio! Here are some of my projects:
 ### [Project 1: Social Media App](https://chatenligne-965de.web.app)
 **Description:** A feature-rich social media platform where users can create, edit, and delete posts after signing in. Users can customize their profiles, including editing personal details. The app supports interactive features like liking and commenting on posts, enhancing user engagement. Additionally, it integrates OpenAI's ChatGPT 3.5 Turbo to help users generate personalized profile descriptions based on their selected interests.
 
-**Technologies Used**: Firebase, React, OpenAI.
+**Technologies Used**: Firebase, React, OpenAI.https://github.com/1nfiniteLo0p/portfolio/blob/main/README.md
+
+![image](https://github.com/user-attachments/assets/db0fb073-8683-481f-bf8b-f5137c43d7a2)
 
 ---
 
@@ -15,6 +17,8 @@ Welcome to my portfolio! Here are some of my projects:
 **Description**: Development of an interactive website for user login, viewing anime episodes, and tracking watch history. The project includes interface design using React and Bulma, along with the integration of APIs for episode management and authentication.
 
 **Technologies** Used: React, JavaScript, Bulma, API, Azure for hosting.
+
+![image](https://github.com/user-attachments/assets/f1112ff8-96d6-429e-b864-43ccaf8083d3)
 
 ---
 
