@@ -1,6 +1,6 @@
 # Jerry's Portfolio
 
-Welcome to my portfolio! Here are some of my projects:
+Welcome to my portfolio! Here are some of my projects, listed from the most recent to the oldest:
 
 ## Projects
 
@@ -19,16 +19,7 @@ Welcome to my portfolio! Here are some of my projects:
 
 ---
 
-### [Project 2: Anime Episode Tracker](https://e2050078-tp2.azurewebsites.net/)
-**Description**: Development of an interactive website for user login, viewing anime episodes, and tracking watch history. The project includes interface design using React and Bulma, along with the integration of APIs for episode management and authentication.
-
-**Technologies** Used: React, JavaScript, Bulma, API, Azure for hosting.
-
-![image](https://github.com/user-attachments/assets/f1112ff8-96d6-429e-b864-43ccaf8083d3)
-
----
-
-### [Project 3: Dog Breed Classification Model](https://huggingface.co/spaces/infin1ty/DogBreedClassifier)
+### [Project 2: Dog Breed Classification Model](https://huggingface.co/spaces/infin1ty/DogBreedClassifier)
 **Github repo**: https://github.com/1nfiniteLo0p/DogBreedClassifier
 
 **Description**: Development of a deep learning model to classify 120 dog breeds from images. The project involves data preprocessing, model training, and performance evaluation using PyTorch and Scikit-learn.
@@ -38,3 +29,12 @@ Welcome to my portfolio! Here are some of my projects:
 **GIF demonstrating the classification of a dog image by the model.**
 
 ![GIF demonstrating the classification of a dog image by the model.](https://github.com/1nfiniteLo0p/portfolio/blob/main/dogBreedClassifierDemo.gif)
+
+---
+
+### [Project 3: Anime Episode Tracker](https://e2050078-tp2.azurewebsites.net/)
+**Description**: Development of an interactive website for user login, viewing anime episodes, and tracking watch history. The project includes interface design using React and Bulma, along with the integration of APIs for episode management and authentication.
+
+**Technologies** Used: React, JavaScript, Bulma, API, Azure for hosting.
+
+![image](https://github.com/user-attachments/assets/f1112ff8-96d6-429e-b864-43ccaf8083d3)
