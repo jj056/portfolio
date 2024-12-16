@@ -1,4 +1,4 @@
-# Jerry's portfolio
+# Jerry's Portfolio
 
 Welcome to my portfolio! Here are some of my projects:
 
@@ -9,7 +9,13 @@ Welcome to my portfolio! Here are some of my projects:
 
 **Technologies Used**: Firebase, React, OpenAI.https://github.com/1nfiniteLo0p/portfolio/blob/main/README.md
 
-![image](https://github.com/user-attachments/assets/db0fb073-8683-481f-bf8b-f5137c43d7a2)
+**_MyCircle_ app homepage**
+
+![MyCircle app homepage](https://github.com/user-attachments/assets/db0fb073-8683-481f-bf8b-f5137c43d7a2)
+
+**GIF showing ChatGPT generating a personalized user profile description based on user interests.**
+
+![GIF showing ChatGPT generating a personalized user profile description based on user interests.](https://github.com/1nfiniteLo0p/portfolio/blob/main/generateDescription.gif)
 
 ---
 
