@@ -7,7 +7,7 @@ Welcome to my portfolio! Here are some of my projects:
 ### [Project 1: Social Media App](https://chatenligne-965de.web.app)
 **Description:** A feature-rich social media platform where users can create, edit, and delete posts after signing in. Users can customize their profiles, including editing personal details. The app supports interactive features like liking and commenting on posts, enhancing user engagement. Additionally, it integrates OpenAI's ChatGPT 3.5 Turbo to help users generate personalized profile descriptions based on their selected interests.
 
-**Technologies Used**: Firebase, React, OpenAI.https://github.com/1nfiniteLo0p/portfolio/blob/main/README.md
+**Technologies Used**: Firebase, React, OpenAI.
 
 **_MyCircle_ app homepage**
 
@@ -34,3 +34,7 @@ Welcome to my portfolio! Here are some of my projects:
 **Description**: Development of a deep learning model to classify 120 dog breeds from images. The project involves data preprocessing, model training, and performance evaluation using PyTorch and Scikit-learn.
 
 **Technologies Used**: Fastai, PyTorch, Python, Pandas, NumPy, Scikit-learn, Matplotlib.
+
+**GIF demonstrating the classification of a dog image by the model.**
+
+![GIF demonstrating the classification of a dog image by the model.](https://github.com/1nfiniteLo0p/portfolio/blob/main/dogBreedClassifierDemo.gif)
