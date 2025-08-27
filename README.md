@@ -5,7 +5,6 @@ Welcome to my portfolio! Here are some of my projects, listed from the most rece
 ## Table of Contents
 - [Social Media App](#project-1-social-media-app)
 - [Dog Breed Classification Model](#project-2-dog-breed-classification-model)
-- [Anime Episode Tracker](#project-3-anime-episode-tracker)
 
 ---
 
@@ -36,12 +35,3 @@ Welcome to my portfolio! Here are some of my projects, listed from the most rece
 **GIF demonstrating the classification of a dog image by the model.**
 
 ![GIF demonstrating the classification of a dog image by the model.](https://github.com/1nfiniteLo0p/portfolio/blob/main/dogBreedClassifierDemo.gif)
-
----
-
-### <a name="project-3-anime-episode-tracker"></a>[Project 3: Anime Episode Tracker](https://e2050078-tp2.azurewebsites.net/)
-**Description**: Development of an interactive website for user login, viewing anime episodes, and tracking watch history. The project includes interface design using React and Bulma, along with the integration of APIs for episode management and authentication.
-
-**Technologies** Used: React, JavaScript, Bulma, API, Azure for hosting.
-
-![image](https://github.com/user-attachments/assets/f1112ff8-96d6-429e-b864-43ccaf8083d3)
