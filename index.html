@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerry Jecrois - Étudiant en génie logiciel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <button id="lang-btn">EN</button>
+      <h1>Jerry Jecrois</h1>
+      <h2 data-en="Software Engineering Student" data-fr="Étudiant en génie logiciel">Étudiant en génie logiciel</h2>
+      <p class="school">
+        École de technologie supérieure
+        <img src="assets/ets.svg" alt="ETS Logo" class="ets-logo" />
+      </p>
+
+    </header>
+
+    <section class="skills">
+      <h3 data-en="Skills" data-fr="Compétences">Skills</h3>
+      <div class="skills-container">
+        <!-- Langages & Frameworks -->
+        <div class="skill">
+          <img src="assets/java.png" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <img src="assets/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="skill">
+          <img src="assets/javascript.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="assets/react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <img src="assets/flutter.png" alt="Flutter" />
+          <p>Flutter</p>
+        </div>
+        <div class="skill">
+          <img src="assets/kotlin.png" alt="Kotlin" />
+          <p>Kotlin</p>
+        </div>
+        <div class="skill">
+          <img src="assets/sql.png" alt="SQL" />
+          <p>SQL</p>
+        </div>
+
+        <!-- Outils -->
+        <div class="skill">
+          <img src="assets/github.png" alt="GitHub" />
+          <p>Git/GitHub</p>
+        </div>
+        <div class="skill">
+          <img src="assets/firebase.png" alt="Firebase" />
+          <p>Firebase</p>
+        </div>
+        <div class="skill">
+          <img src="assets/azure.png" alt="Azure" />
+          <p>Azure</p>
+        </div>
+
+        <!-- Systèmes -->
+        <div class="skill">
+          <img src="assets/linux.png" alt="Linux" />
+          <p>Linux</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about">
+      <h3 data-en="About Me" data-fr="À propos de moi">À propos de moi</h3>
+      <p data-en="I am a curious and motivated developer. I enjoy learning new things and solving problems. I also enjoy working collaboratively with others, whether they are developers or not. I don't shy away from challenges and always give my all to every project, with the goal of making an impact and improving myself."
+        data-fr="Je suis un développeur curieux et motivé. J'aime apprendre de nouvelles choses et résoudre des problèmes. J'apprécie également de travailler en collaboration avec d'autres personnes, qu'elles soient développeurs ou non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir un impact et de m'améliorer.">
+        Je suis un développeur curieux et motivé. J'aime apprendre de nouvelles choses et résoudre des problèmes.
+        J'apprécie également de travailler en collaboration avec d'autres personnes, qu'elles soient développeurs ou
+        non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir
+        un impact et de m'améliorer.
+      </p>
+      <a href="#" class="btn" data-en="Download CV" data-fr="Télécharger CV">Télécharger CV</a>
+    </section>
+
+
+
+    <div class="columns">
+      <div class="column">
+        <section class="interests">
+          <h3 data-en="Interests" data-fr="Intérêts">Intérêts</h3>
+          <ul>
+            <li data-en="Artificial Intelligence" data-fr="Intelligence Artificielle">Intelligence Artificielle</li>
+            <li data-en="Quant trading" data-fr="Trading Quantitatif">Trading Quantitatif</li>
+          </ul>
+        </section>
+      </div>
+
+
+      <div class="column">
+        <section class="education">
+          <h3 data-en="Education" data-fr="Éducation">Éducation</h3>
+          <div class="item">
+            <h4 data-en="Bachelor in Software Engineering" data-fr="Baccalauréat en génie logiciel">Baccalauréat en
+              génie logiciel</h4>
+            <p>École de technologie supérieure</p>
+            <p>2025 - en cours</p>
+          </div>
+          <div class="item">
+            <h4 data-en="Computer science (DEC)" data-fr="Techniques de l'informatique (DEC)">Techniques de
+              l'informatique (DEC)</h4>
+            <p>Collège de Maisonneuve</p>
+            <p>2020 - 2025</p>
+          </div>
+          <div class="item">
+            <h4 data-en="Health Sciences (DES)" data-fr="Science de la santé (DES)">Science de la santé (DES)</h4>
+            <p>Collège Français de Montréal</p>
+            <p>2015 - 2020</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="project">
+      <h3 data-en="Projects" data-fr="Projets">Projets</h3>
+
+    </section>
+
+  </div>
+</body>
+
+<script>
+  const btn = document.getElementById('lang-btn');
+
+  // Detect user language
+  let userLang = navigator.language || navigator.userLanguage;
+  userLang = userLang.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  let isEnglish = userLang === 'en';
+
+  // Initialize page language
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+  });
+  btn.textContent = isEnglish ? 'FR' : 'EN';
+
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isEnglish ? el.getAttribute('data-fr') : el.getAttribute('data-en');
+    });
+    btn.textContent = isEnglish ? 'EN' : 'FR';
+    isEnglish = !isEnglish;
+  });
+</script>
+
+
+</html>
