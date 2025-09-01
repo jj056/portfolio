@@ -11,13 +11,13 @@
 <body>
   <div class="container">
     <header>
-      <button id="lang-btn">EN</button>
+      <button id="lang-btn" class="btn">EN</button>
       <h1>Jerry Jecrois</h1>
       <h2 data-en="Software Engineering Student" data-fr="Étudiant en génie logiciel">Étudiant en génie logiciel</h2>
-      <p class="school">
+      <a id="school-link" href="https://www.etsmtl.ca/" class="school" target="_blank">
         École de technologie supérieure
         <img src="assets/ets.svg" alt="ETS Logo" class="ets-logo" />
-      </p>
+      </a>
 
     </header>
 
@@ -56,7 +56,7 @@
 
         <!-- Outils -->
         <div class="skill">
-          <img src="assets/github.png" alt="GitHub" />
+          <img src="assets/github-mark-white.png" alt="GitHub" />
           <p>Git/GitHub</p>
         </div>
         <div class="skill">
@@ -86,7 +86,8 @@
         non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir
         un impact et de m'améliorer.
       </p>
-      <a href="#" class="btn" data-en="Download CV" data-fr="Télécharger CV">Télécharger CV</a>
+      <a href="pretty-dev-resume.pdf" class="btn download-btn" download="Jerry-resume" data-en="Download CV"
+        data-fr="Télécharger CV">Télécharger CV</a>
     </section>
 
 
@@ -130,13 +131,41 @@
     <section class="project">
       <h3 data-en="Projects" data-fr="Projets">Projets</h3>
 
+      <div class="project-item">
+        <h4><a href="https://chatenligne-965de.web.app" target="_blank">Project 1: Social Media App</a></h4>
+        <p data-en="A feature-rich social media platform where users can create, edit, and delete posts after signing in. Users can customize their profiles, including editing personal details. The app supports interactive features like liking and commenting on posts, enhancing user engagement. Additionally, it integrates OpenAI's ChatGPT 3.5 Turbo to help users generate personalized profile descriptions based on their selected interests."
+          data-fr="Une plateforme de médias sociaux riche en fonctionnalités où les utilisateurs peuvent créer, modifier et supprimer des publications après s'être connectés. Les utilisateurs peuvent personnaliser leurs profils, y compris modifier leurs informations personnelles. L'application prend en charge des fonctionnalités interactives comme les mentions J’aime et les commentaires, favorisant l'engagement. De plus, elle intègre ChatGPT 3.5 Turbo d'OpenAI pour aider les utilisateurs à générer des descriptions de profil personnalisées en fonction de leurs intérêts.">
+          A feature-rich social media platform where users can create, edit, and delete posts after signing in...
+        </p>
+        <p><strong>Technologies:</strong> Firebase, React, OpenAI</p>
+        <img src="https://github.com/user-attachments/assets/db0fb073-8683-481f-bf8b-f5137c43d7a2"
+          alt="MyCircle app homepage" />
+        <img src="https://github.com/1nfiniteLo0p/portfolio/blob/main/generateDescription.gif?raw=true"
+          alt="GIF showing ChatGPT generating profile description" />
+      </div>
+
+      <div class="project-item">
+        <h4><a href="https://huggingface.co/spaces/infin1ty/DogBreedClassifier" target="_blank">Project 2: Dog Breed
+            Classification Model</a></h4>
+        <p><a href="https://github.com/1nfiniteLo0p/DogBreedClassifier" target="_blank">Github repo</a></p>
+        <p data-en="Development of a deep learning model to classify 120 dog breeds from images. The project involves data preprocessing, model training, and performance evaluation using PyTorch and Scikit-learn."
+          data-fr="Développement d'un modèle d'apprentissage profond pour classer 120 races de chiens à partir d'images. Le projet inclut le prétraitement des données, l'entraînement du modèle et l'évaluation des performances à l'aide de PyTorch et Scikit-learn.">
+          Development of a deep learning model to classify 120 dog breeds from images...
+        </p>
+        <p><strong>Technologies:</strong> Fastai, PyTorch, Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
+        <img src="https://github.com/1nfiniteLo0p/portfolio/blob/main/dogBreedClassifierDemo.gif?raw=true"
+          alt="Dog breed classifier demo" />
+      </div>
+
     </section>
+
 
   </div>
 </body>
 
 <script>
-  const btn = document.getElementById('lang-btn');
+  const btn = document.querySelector('#lang-btn');
+  const schoolLink = document.querySelector('#school-link');
 
   // Detect user language
   let userLang = navigator.language || navigator.userLanguage;
@@ -149,12 +178,27 @@
   });
   btn.textContent = isEnglish ? 'FR' : 'EN';
 
+  // Set link based on language
+  function updateSchoolLink() {
+    if (isEnglish) {
+      schoolLink.href = 'https://www.etsmtl.ca/en/';
+    } else {
+      schoolLink.href = 'https://www.etsmtl.ca/';
+    }
+  }
+
+  // Run on page load
+  updateSchoolLink();
+
   btn.addEventListener('click', () => {
     document.querySelectorAll('[data-en]').forEach(el => {
       el.textContent = isEnglish ? el.getAttribute('data-fr') : el.getAttribute('data-en');
     });
     btn.textContent = isEnglish ? 'EN' : 'FR';
     isEnglish = !isEnglish;
+
+    // Update ETS link
+    updateSchoolLink();
   });
 </script>
 
