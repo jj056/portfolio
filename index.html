@@ -86,7 +86,7 @@
         non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir
         un impact et de m'améliorer.
       </p>
-      <a href="CV-log-website.pdf" class="btn download-btn" download="Jerry-resume" data-en="Download CV"
+      <a id="download-btn" href="CV-log-website.pdf" class="btn" download="Jerry-resume" data-en="Download CV"
         data-fr="Télécharger CV">Télécharger CV</a>
     </section>
 
@@ -163,39 +163,39 @@
 <script>
   const btn = document.querySelector('#lang-btn');
   const schoolLink = document.querySelector('#school-link');
+  const downloadBtn = document.querySelector('#download-btn');
 
   // Detect user language
-  let userLang = navigator.language || navigator.userLanguage;
-  userLang = userLang.toLowerCase().startsWith('fr') ? 'fr' : 'en';
-  let isEnglish = userLang === 'en';
+  let isEnglish = !(navigator.language || navigator.userLanguage).toLowerCase().startsWith('fr');
 
-  // Initialize page language
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
-  });
-  btn.textContent = isEnglish ? 'FR' : 'EN';
-
-  // Set link based on language
-  function updateSchoolLink() {
-    if (isEnglish) {
-      schoolLink.href = 'https://www.etsmtl.ca/en/';
-    } else {
-      schoolLink.href = 'https://www.etsmtl.ca/';
-    }
+  // Update all text elements based on language
+  function updateText() {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
+    });
+    btn.textContent = isEnglish ? 'FR' : 'EN';
   }
 
-  // Run on page load
-  updateSchoolLink();
+  // Set link based on language
+  function updateLinks() {
+    schoolLink.href = isEnglish
+      ? 'https://www.etsmtl.ca/en/'
+      : 'https://www.etsmtl.ca/';
 
+    downloadBtn.href = isEnglish
+      ? 'CV-log-english-website.pdf'
+      : 'CV-log-website.pdf';
+  }
+
+  // Initialize page
+  updateText();
+  updateLinks();
+
+  // Toggle language on button click
   btn.addEventListener('click', () => {
-    document.querySelectorAll('[data-en]').forEach(el => {
-      el.textContent = isEnglish ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-    });
-    btn.textContent = isEnglish ? 'EN' : 'FR';
     isEnglish = !isEnglish;
-
-    // Update ETS link
-    updateSchoolLink();
+    updateText();
+    updateLinks();
   });
 </script>
 

@@ -140,14 +140,14 @@ header .ets-logo {
   color: #222831;
 }
 
-.download-btn {
+#download-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
 
-.download-btn::after {
+#download-btn::after {
   content: "";
   display: inline-block;
   width: 16px;
