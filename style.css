@@ -51,7 +51,7 @@ header h2 {
 }
 
 header a.school {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -65,10 +65,84 @@ header .ets-logo {
   width: auto;
 }
 
-/* Skills section */
-.skills {
+.contact-info {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-info a:hover {
+  color: #eeeeee;
+}
+
+.social-logo {
+  height: 18px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* External link icon for header links and projects */
+header a.school[href^="http"]::after,
+.contact-info a[href^="http"]::after,
+.project-item a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url("assets/external-link.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+header a.school[href^="http"]:hover::after,
+.contact-info a[href^="http"]:hover::after,
+.project-item a[href^="http"]:hover::after {
+  transform: translateY(-2px);
+}
+
+/* About section */
+.about {
   padding: 40px;
-  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffd369;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #eeeeee;
+}
+
+/* Skills section container */
+.skills-section {
+  padding: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.skills {
+  margin-bottom: 30px;
 }
 
 .skills-container {
@@ -103,23 +177,26 @@ header .ets-logo {
   color: #eeeeee;
 }
 
-/* About section */
-.about {
-  padding: 40px;
-  border-bottom: 1px solid #eeeeee;
+/* Machine Learning skills section */
+.ml-skills {
+  margin-top: 20px;
 }
 
-.about h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #ffd369;
+.ml-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style-type: none;
 }
 
-.about p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  line-height: 1.8;
+.ml-list li {
+  background-color: #2c2c2c;
+  border: 1px solid #ffd369;
   color: #eeeeee;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -132,30 +209,14 @@ header .ets-logo {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .btn:hover {
   background-color: #eeeeee;
   color: #222831;
-}
-
-#download-btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#download-btn::after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("assets/download.svg");
-  color: #000;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /* Project section */
@@ -208,24 +269,6 @@ header .ets-logo {
   margin: 20px auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-}
-
-/* External link icon after every external link in project section */
-.project-item a[href^="http"]::after {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-left: 5px;
-  background-image: url("assets/external-link.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  transition: transform 0.3s;
-}
-
-.project-item a[href^="http"]:hover::after {
-  transform: translateY(-2px);
 }
 
 /* Columns layout */

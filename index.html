@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jerry Jecrois - Étudiant en génie logiciel</title>
+  <title data-en="Jerry Jecrois - Electrical Engineering Student"
+    data-fr="Jerry Jecrois - Étudiant en génie électrique">Jerry Jecrois - Étudiant en génie électrique</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,105 +14,177 @@
     <header>
       <button id="lang-btn" class="btn">EN</button>
       <h1>Jerry Jecrois</h1>
-      <h2 data-en="Software Engineering Student" data-fr="Étudiant en génie logiciel">Étudiant en génie logiciel</h2>
-      <a id="school-link" href="https://www.etsmtl.ca/" class="school" target="_blank">
+      <h2 data-en="Junior Developer" data-fr="Développeur junior">Développeur junior</h2>
+      <a id="school-link" href="https://www.etsmtl.ca/programmes-formations/baccalaureat-genie-electrique"
+        class="school" target="_blank">
         École de technologie supérieure
         <img src="assets/ets.svg" alt="ETS Logo" class="ets-logo" />
       </a>
-
+      <div class="contact-info">
+        <a href="mailto:jerry.jecrois.1@ens.etsmtl.ca">jerry.jecrois.1@ens.etsmtl.ca</a>
+        <a href="https://linkedin.com/in/jerryjcr" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn Logo" class="social-logo" /> LinkedIn
+        </a>
+      </div>
     </header>
 
-    <section class="skills">
-      <h3 data-en="Skills" data-fr="Compétences">Skills</h3>
-      <div class="skills-container">
-        <!-- Langages & Frameworks -->
-        <div class="skill">
-          <img src="assets/java.png" alt="Java" />
-          <p>Java</p>
-        </div>
-        <div class="skill">
-          <img src="assets/python.png" alt="Python" />
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <img src="assets/javascript.png" alt="JavaScript" />
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <img src="assets/react.png" alt="React" />
-          <p>React</p>
-        </div>
-        <div class="skill">
-          <img src="assets/flutter.png" alt="Flutter" />
-          <p>Flutter</p>
-        </div>
-        <div class="skill">
-          <img src="assets/kotlin.png" alt="Kotlin" />
-          <p>Kotlin</p>
-        </div>
-        <div class="skill">
-          <img src="assets/sql.png" alt="SQL" />
-          <p>SQL</p>
-        </div>
+    <!-- About Me Section -->
+    <section class="about">
+      <h3 data-en="About Me" data-fr="À propos de moi">À propos de moi</h3>
+      <p data-en="Junior Developer with a strong foundation in full-stack web development, supported by a B.Eng. in Electrical Engineering and a DEC in Computer Science. Experienced in optimizing web platforms, with achievements including API cost reductions and performance enhancements through database query optimization and geospatial indexing. Working knowledge of languages like Python, JavaScript, and C, with practical experience in frameworks such as React, Flutter, and Node.js. Adept at Agile workflows, debugging, and delivering production-ready code, with certifications in Machine Learning and advanced mathematics. Currently transitioning toward embedded systems, with a focus on applying strong development discipline and technical problem-solving skills across both hardware and software."
+        data-fr="Développeur junior avec de solides bases en développement Web full-stack, soutenues par un B.Ing. en génie électrique et un DEC en informatique. Expérimenté dans l'optimisation de plateformes Web, avec des réalisations incluant des réductions de coûts d'API et des améliorations de performance grâce à l'optimisation des requêtes de base de données et à l'indexation géospatiale. Connaissance pratique de langages tels que Python, JavaScript et C, avec une expérience pratique de frameworks comme React, Flutter et Node.js. Habitué aux flux de travail Agile, au débogage et à la livraison de code prêt pour la production, avec des certifications en apprentissage automatique et en mathématiques avancées. Actuellement en transition vers les systèmes embarqués, avec un accent sur l'application d'une solide discipline de développement et de compétences en résolution de problèmes techniques à la fois matériels et logiciels.">
+        Junior Developer with a strong foundation in full-stack web development, supported by
+        a B.Eng. in Electrical Engineering and a DEC in Computer Science. Experienced
+        in optimizing web platforms, with achievements including API cost reductions
+        and performance enhancements through database query optimization and geospatial
+        indexing. Working knowledge of languages like Python, JavaScript, and C, with
+        practical experience in frameworks such as React, Flutter, and Node.js. Adept
+        at Agile workflows, debugging, and delivering production-ready code, with
+        certifications in Machine Learning and advanced mathematics. Currently
+        transitioning toward embedded systems, with a focus on applying strong development
+        discipline and technical problem-solving skills across both hardware and software.
+      </p>
+    </section>
 
-        <!-- Outils -->
-        <div class="skill">
-          <img src="assets/github-mark-white.png" alt="GitHub" />
-          <p>Git/GitHub</p>
+    <!-- Combined Skills Section -->
+    <section class="skills-section">
+      <div class="skills">
+        <h3 data-en="Skills" data-fr="Compétences">Skills</h3>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="assets/java.png" alt="Java" />
+            <p>Java</p>
+          </div>
+          <div class="skill">
+            <img src="assets/python.png" alt="Python" />
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <img src="assets/javascript.png" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img src="assets/react.png" alt="React" />
+            <p>React</p>
+          </div>
+          <div class="skill">
+            <img src="assets/flutter.png" alt="Flutter" />
+            <p>Flutter</p>
+          </div>
+          <div class="skill">
+            <img src="assets/kotlin.png" alt="Kotlin" />
+            <p>Kotlin</p>
+          </div>
+          <div class="skill">
+            <img src="assets/sql.png" alt="SQL" />
+            <p>SQL</p>
+          </div>
+          <div class="skill">
+            <img src="assets/c.png" alt="C" />
+            <p>C</p>
+          </div>
+          <div class="skill">
+            <img src="assets/nodejs.png" alt="Node.js" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill">
+            <img src="assets/dart.png" alt="Dart" />
+            <p>Dart</p>
+          </div>
+          <div class="skill">
+            <img src="assets/github-mark-white.png" alt="GitHub" />
+            <p>Git/GitHub</p>
+          </div>
+          <div class="skill">
+            <img src="assets/firebase.png" alt="Firebase" />
+            <p>Firebase</p>
+          </div>
+          <div class="skill">
+            <img src="assets/azure.png" alt="Azure" />
+            <p>Azure (Website Deployment)</p>
+          </div>
+          <div class="skill">
+            <img src="assets/arduino.png" alt="Arduino IDE" />
+            <p>Arduino IDE</p>
+          </div>
+          <div class="skill">
+            <img src="assets/linux.png" alt="Linux" />
+            <p>Linux</p>
+          </div>
         </div>
-        <div class="skill">
-          <img src="assets/firebase.png" alt="Firebase" />
-          <p>Firebase</p>
-        </div>
-        <div class="skill">
-          <img src="assets/azure.png" alt="Azure" />
-          <p>Azure</p>
-        </div>
+      </div>
 
-        <!-- Systèmes -->
-        <div class="skill">
-          <img src="assets/linux.png" alt="Linux" />
-          <p>Linux</p>
-        </div>
+      <div class="ml-skills">
+        <h3 data-en="Machine Learning & Data Tools" data-fr="Apprentissage automatique et outils de données">Machine
+          Learning & Data Tools</h3>
+        <ul class="ml-list">
+          <li>Fastai</li>
+          <li>NumPy</li>
+          <li>Pandas</li>
+          <li>Scikit-learn</li>
+          <li>Matplotlib</li>
+          <li>Jupyter Notebook & Lab</li>
+          <li>Anaconda & Environments</li>
+        </ul>
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="project">
+      <h3 data-en="Projects" data-fr="Projets">Projets</h3>
 
-    <section class="about">
-      <h3 data-en="About Me" data-fr="À propos de moi">À propos de moi</h3>
-      <p data-en="I am a curious and motivated developer. I enjoy learning new things and solving problems. I also enjoy working collaboratively with others, whether they are developers or not. I don't shy away from challenges and always give my all to every project, with the goal of making an impact and improving myself."
-        data-fr="Je suis un développeur curieux et motivé. J'aime apprendre de nouvelles choses et résoudre des problèmes. J'apprécie également de travailler en collaboration avec d'autres personnes, qu'elles soient développeurs ou non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir un impact et de m'améliorer.">
-        Je suis un développeur curieux et motivé. J'aime apprendre de nouvelles choses et résoudre des problèmes.
-        J'apprécie également de travailler en collaboration avec d'autres personnes, qu'elles soient développeurs ou
-        non. Je ne recule pas devant les défis et je donne toujours mon maximum dans chaque projet, dans le but d'avoir
-        un impact et de m'améliorer.
-      </p>
-      <a id="download-btn" href="CV-log-website.pdf" class="btn" download="Jerry-resume" data-en="Download CV"
-        data-fr="Télécharger CV">Télécharger CV</a>
+      <div class="project-item">
+        <h4><a href="https://huggingface.co/spaces/infin1ty/DogBreedClassifier" target="_blank">Project 1: Dog Breed
+            Classification Model</a></h4>
+        <p><a href="https://github.com/1nfiniteLo0p/DogBreedClassifier" target="_blank">Github repo</a></p>
+        <p data-en="Development of a deep learning model to classify 120 dog breeds from images. The project involves data preprocessing, model training, and performance evaluation using PyTorch and Scikit-learn."
+          data-fr="Développement d'un modèle d'apprentissage profond pour classer 120 races de chiens à partir d'images. Le projet inclut le prétraitement des données, l'entraînement du modèle et l'évaluation des performances à l'aide de PyTorch et Scikit-learn.">
+          Development of a deep learning model to classify 120 dog breeds from images...
+        </p>
+        <p><strong>Technologies:</strong> Fastai, PyTorch, Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
+        <img src="assets/dogBreedClassifierDemo.gif" alt="Dog breed classifier demo" />
+      </div>
+
+      <div class="project-item">
+        <h4><a href="https://chatenligne-965de.web.app" target="_blank">Project 2: Social Media App</a></h4>
+        <p data-en="A feature-rich social media platform where users can create, edit, and delete posts after signing in. Users can customize their profiles, including editing personal details. The app supports interactive features like liking and commenting on posts, enhancing user engagement. Additionally, it integrates OpenAI's ChatGPT 3.5 Turbo to help users generate personalized profile descriptions based on their selected interests."
+          data-fr="Une plateforme de médias sociaux riche en fonctionnalités où les utilisateurs peuvent créer, modifier et supprimer des publications après s'être connectés. Les utilisateurs peuvent personnaliser leurs profils, y compris modifier leurs informations personnelles. L'application prend en charge des fonctionnalités interactives comme les mentions J’aime et les commentaires, favorisant l'engagement. De plus, elle intègre ChatGPT 3.5 Turbo d'OpenAI pour aider les utilisateurs à générer des descriptions de profil personnalisées en fonction de leurs intérêts.">
+          A feature-rich social media platform where users can create, edit, and delete posts after signing in...
+        </p>
+        <p><strong>Technologies:</strong> Firebase, React, OpenAI</p>
+        <img src="assets/myCircle-homepage.png" alt="MyCircle app homepage" />
+        <img src="assets/generateDescription.gif" alt="GIF showing ChatGPT generating profile description" />
+      </div>
     </section>
 
-
-
+    <!-- Columns: Interests & Education -->
     <div class="columns">
       <div class="column">
         <section class="interests">
           <h3 data-en="Interests" data-fr="Intérêts">Intérêts</h3>
           <ul>
             <li data-en="Artificial Intelligence" data-fr="Intelligence Artificielle">Intelligence Artificielle</li>
-            <li data-en="Quant trading" data-fr="Trading Quantitatif">Trading Quantitatif</li>
+            <li data-en="Embedded Systems" data-fr="Systèmes embarqués">Systèmes embarqués</li>
+            <li data-en="Thinkering with electrical systems" data-fr="Bricolage de systèmes électriques">Bricolage de
+              systèmes électriques</li>
           </ul>
         </section>
       </div>
-
 
       <div class="column">
         <section class="education">
           <h3 data-en="Education" data-fr="Éducation">Éducation</h3>
           <div class="item">
-            <h4 data-en="Bachelor in Software Engineering" data-fr="Baccalauréat en génie logiciel">Baccalauréat en
-              génie logiciel</h4>
+            <h4 data-en="Bachelor of Engineering (B.Eng.) Electrical Engineering"
+              data-fr="Baccalauréat en génie électrique">Baccalauréat en génie électrique</h4>
             <p>École de technologie supérieure</p>
-            <p>2025 - en cours</p>
+            <p>Aug 2026 – Expected Jun 2030</p>
+          </div>
+          <div class="item">
+            <h4 data-en="Bachelor of Engineering (B.Eng.) Software Engineering"
+              data-fr="Baccalauréat en génie logiciel">Baccalauréat en génie logiciel</h4>
+            <p>École de technologie supérieure</p>
+            <p>Aug 2025 - Dec 2025</p>
           </div>
           <div class="item">
             <h4 data-en="Computer science (DEC)" data-fr="Techniques de l'informatique (DEC)">Techniques de
@@ -128,42 +201,12 @@
       </div>
     </div>
 
-    <section class="project">
-      <h3 data-en="Projects" data-fr="Projets">Projets</h3>
-
-      <div class="project-item">
-        <h4><a href="https://chatenligne-965de.web.app" target="_blank">Project 1: Social Media App</a></h4>
-        <p data-en="A feature-rich social media platform where users can create, edit, and delete posts after signing in. Users can customize their profiles, including editing personal details. The app supports interactive features like liking and commenting on posts, enhancing user engagement. Additionally, it integrates OpenAI's ChatGPT 3.5 Turbo to help users generate personalized profile descriptions based on their selected interests."
-          data-fr="Une plateforme de médias sociaux riche en fonctionnalités où les utilisateurs peuvent créer, modifier et supprimer des publications après s'être connectés. Les utilisateurs peuvent personnaliser leurs profils, y compris modifier leurs informations personnelles. L'application prend en charge des fonctionnalités interactives comme les mentions J’aime et les commentaires, favorisant l'engagement. De plus, elle intègre ChatGPT 3.5 Turbo d'OpenAI pour aider les utilisateurs à générer des descriptions de profil personnalisées en fonction de leurs intérêts.">
-          A feature-rich social media platform where users can create, edit, and delete posts after signing in...
-        </p>
-        <p><strong>Technologies:</strong> Firebase, React, OpenAI</p>
-        <img src="assets/myCircle-homepage.png" alt="MyCircle app homepage" />
-        <img src="assets/generateDescription.gif" alt="GIF showing ChatGPT generating profile description" />
-      </div>
-
-      <div class="project-item">
-        <h4><a href="https://huggingface.co/spaces/infin1ty/DogBreedClassifier" target="_blank">Project 2: Dog Breed
-            Classification Model</a></h4>
-        <p><a href="https://github.com/1nfiniteLo0p/DogBreedClassifier" target="_blank">Github repo</a></p>
-        <p data-en="Development of a deep learning model to classify 120 dog breeds from images. The project involves data preprocessing, model training, and performance evaluation using PyTorch and Scikit-learn."
-          data-fr="Développement d'un modèle d'apprentissage profond pour classer 120 races de chiens à partir d'images. Le projet inclut le prétraitement des données, l'entraînement du modèle et l'évaluation des performances à l'aide de PyTorch et Scikit-learn.">
-          Development of a deep learning model to classify 120 dog breeds from images...
-        </p>
-        <p><strong>Technologies:</strong> Fastai, PyTorch, Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
-        <img src="assets/dogBreedClassifierDemo.gif" alt="Dog breed classifier demo" />
-      </div>
-
-    </section>
-
-
   </div>
 </body>
 
 <script>
   const btn = document.querySelector('#lang-btn');
   const schoolLink = document.querySelector('#school-link');
-  const downloadBtn = document.querySelector('#download-btn');
 
   // Detect user language
   let isEnglish = !(navigator.language || navigator.userLanguage).toLowerCase().startsWith('fr');
@@ -173,18 +216,17 @@
     document.querySelectorAll('[data-en]').forEach(el => {
       el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-fr');
     });
+    document.title = isEnglish
+      ? "Jerry Jecrois - Electrical Engineering Student"
+      : "Jerry Jecrois - Étudiant en génie électrique";
     btn.textContent = isEnglish ? 'FR' : 'EN';
   }
 
   // Set link based on language
   function updateLinks() {
     schoolLink.href = isEnglish
-      ? 'https://www.etsmtl.ca/en/'
-      : 'https://www.etsmtl.ca/';
-
-    downloadBtn.href = isEnglish
-      ? 'CV-log-english-website.pdf'
-      : 'CV-log-website.pdf';
+      ? 'https://www.etsmtl.ca/en/programs-training/baccalaureat-genie-electrique'
+      : 'https://www.etsmtl.ca/programmes-formations/baccalaureat-genie-electrique';
   }
 
   // Initialize page
@@ -198,6 +240,5 @@
     updateLinks();
   });
 </script>
-
 
 </html>
